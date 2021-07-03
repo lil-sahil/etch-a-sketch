@@ -1,0 +1,1 @@
+Etch a sketch project, as specified here. https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project
