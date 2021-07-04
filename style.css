@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* GLobal Variables */
+:root{
+
+    --sketch-height: 400px;
+    --sketch-width: 400px;
+}
+
+/* Utilities */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Sketch Divs */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    height: var(--sketch-height);
+    width: var(--sketch-width);
+    margin: auto;
+    outline: red solid 1px;
+}
+
+
