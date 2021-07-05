@@ -16,12 +16,24 @@
     height: 100vh;
 } */
 
+.container-window {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 50%;
+    height: 80vh;
+
+}
+
 .container-outer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     height: 80vh;
+    flex-basis: 100%;
+    position: absolute;
+    right: -25%;
 }
 
 
@@ -35,11 +47,41 @@
     outline: red solid 1px;
 }
 
-.button-primary:hover {
-    background-color: red;
-    
-    cursor: pointer;
+/* Buttons */
 
+.button {
+    padding: 1rem 2rem;
+}
+
+.button:hover {
+    background-color: red; 
+    cursor: pointer;
 }
 
 
+/* Color Picker */
+.color-picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px red;
+    height: 200px;
+    width: auto;
+    position: absolute; 
+    top: 25%;
+    right: -40%;
+}
+
+.color-picker .color {
+    border: red 1px solid;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.red {background-color: red;}
+.blue {background-color: blue;}
+.black {background-color: black;}
+.orange {background-color: orange;}
+.yellow {background-color: yellow;}
