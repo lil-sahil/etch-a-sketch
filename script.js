@@ -45,7 +45,14 @@ createGrid();
 const colorPicker = document.querySelectorAll('.color');
 
 colorPicker.forEach(element => {
-    element.addEventListener('click', (e) => draw(e.target.classList[1]))
+        element.addEventListener('click', (e) => {
+        
+        colorPicker.forEach(element => element.classList.remove('current-color'));
+
+        e.target.classList.add('current-color');
+        draw(e.target.classList[1]);
+        });
+
     });
 
 

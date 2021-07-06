@@ -85,3 +85,12 @@
 .black {background-color: black;}
 .orange {background-color: orange;}
 .yellow {background-color: yellow;}
+
+
+/* Dynamic Classes */
+.color-picker .current-color {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: black 1px dotted;
+}
